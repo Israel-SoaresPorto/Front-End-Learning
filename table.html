@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+
+        caption {
+            font-size:20px;
+            font-weight: bold;
+            padding:50px 10px;
+        }
+        
+        thead {
+            background: rgb(176, 180, 176);
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        td {
+            border: 1px solid black;
+            background: lightblue;
+            padding:5px;
+        }
+
+        #css {
+            background: lightblue;
+        }
+
+        #js {
+            background: lightgreen;
+        }
+
+        #python {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Lista de Linguagens de Programação e seus Frameworks</caption>
+        <thead>
+            <tr>
+                <th>Linguagem</th>
+                <th>Aplicação</th>
+                <th>Framework</th>
+            </tr>
+        </thead>
+        <tfoot></tfoot>
+        <tbody>
+            <tr id="css">
+                <td rowspan="3" id="css">CSS</td>
+                <td rowspan="3">Front-End</td>
+                <td>Boostrap</td>
+            </tr>
+            <tr>
+                <td>Tailwind</td>
+            </tr>
+            <tr>
+                <td>SASS</td>
+            </tr>
+            <tr>
+                <td rowspan="2" id="js">Javascript</td>
+                <td id="js">Front-End</td>
+                <td id="js">React</td>
+            </tr>
+            <tr>
+                <td id="js">Back-End</td>
+                <td id="js">Node.Js</td>
+            </tr>
+            <tr>
+                <td rowspan="2" id="python">Python</td>
+                <td rowspan="2" id="python">Back-End</td>
+                <td id="python">Flask</td>
+            </tr>
+            <tr>
+                <td id="python">Django</td>
+            </tr>
+    
+    
+        </tbody>
+    </table>
+</body>
+</html>

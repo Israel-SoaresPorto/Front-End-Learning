@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .formset {
+            width:400px;
+            margin: 50px auto 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .formset fieldset {
+            background: lightblue;
+        }
+
+        .formset legend {
+            display: inline-block;
+            padding: 5px;
+            margin-bottom: 20px;
+            background: lightcyan;
+            text-align: center;
+        }
+
+        input {
+            margin: auto;
+        }
+
+        .formset label {
+            padding: 5px;
+            display: inline-block;
+        }
+
+        #user, #pass, #login-btn {
+            display: block;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            width: 70%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+
+        }
+
+        #user #pass {
+            background: rgb(159, 206, 233);
+        }
+        #user:focus #pass:focus {
+            background: white;
+        }
+
+        #login-btn {
+            width: 40%;
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acesso</h1>
+    <form action="#" method="post" class="formset">
+        <fieldset>
+            <legend>LOGIN DE USUÁRIO</legend>
+            <label for="user">Digite o nome de Usuário</label>
+            <input type="text" name="user" id="user" autofocus>
+            <label for="pass">Digite a Senha</label>
+            <input type="password" name="pass" id="pass" autofocus>
+            <input type="submit" value="LOGAR" id="login-btn">
+        </fieldset>
+    </form>
+</body>
+</html>
