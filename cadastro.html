@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="#" method="post" class="formset">
+        <fieldset>
+            <legend>CADASTRO DE USUÁRIO</legend>
+            <label for="name">Digite seu nome:</label>
+            <input type="text" name="name" id="forminput" required>
+            <label for="mailuser">Digite seu email:</label>
+            <input type="email" name="mailuser" id="forminput" required>
+            <label for="pass">Digite sua Senha:</label>
+            <input type="password" name="pass" id="forminput" required>
+            <label for="pass">Confirme sua sua Senha:</label>
+            <input type="password" name="pass" id="forminput" required>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="firstname">Nome:</label>
+            <input type="text" name="firstname" id="forminput">
+            <label for="lastname">Sobremone:</label>
+            <input type="text" name="lastname" id="forminput">
+            <label for="idade">Idade:</label>
+            <input type="number" min="18" name="idade" id="forminput">
+            <label for="datanasc">Data de Nascimento</label>
+            <input type="date" name="datanasc" min="01-01-1900"  max="31-12-2100" id="forminput">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="forminput">
+                <option value="0">Selecione</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <label for="aceitar">
+            <input type="checkbox" name="aceitar" id="forminput" required>
+            Eu aceito os termos de servico
+            </label>
+            <input type="submit" value="Confirmar" id="forminput">
+        </fieldset>
+    </form>
+</body>
+</html>
